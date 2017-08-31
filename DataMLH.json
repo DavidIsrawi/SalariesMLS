@@ -1,0 +1,222 @@
+{
+    "2016":{
+        "salary_max":{
+            "D":2350000.0,
+            "F":12715555.67,
+            "M":13827500.0,
+            "GK":4675000.0
+        },
+        "salary_avg":{
+            "D":322329,
+            "M":669000,
+            "F":942935,
+            "GK":293367
+        },
+        "salary_max_player":{
+            "D":"Liam Ridgewell",
+            "F":"Sebastian Giovinco",
+            "M":" Kaka",
+            "GK":"Tim Howard"
+        }
+    },
+    "2009":{
+        "salary_max":{
+            "D":570000.0,
+            "F":3298000.0,
+            "M":12000000.120000001,
+            "GK":600000.0
+        },
+        "salary_avg":{
+            "D":160117,
+            "M":343428,
+            "F":287702,
+            "GK":138049
+        },
+        "salary_max_player":{
+            "D":"Chad Marshall",
+            "F":"Juan Pablo Angel",
+            "M":"David Beckham",
+            "GK":"Kasey Keller"
+        }
+    },
+    "2011":{
+        "salary_max":{
+            "D":9200000.0,
+            "F":10600000.08,
+            "M":12000000.120000001,
+            "GK":1090920.0
+        },
+        "salary_avg":{
+            "D":240036,
+            "M":294960,
+            "F":417321,
+            "GK":202904
+        },
+        "salary_max_player":{
+            "D":"Rafael Marquez",
+            "F":"Thierry Henry",
+            "M":"David Beckham",
+            "GK":"Frank Rost"
+        }
+    },
+    "2007":{
+        "salary_max":{
+            "D":578000.0,
+            "F":5159094.0,
+            "M":12000000.120000001,
+            "GK":441600.0
+        },
+        "salary_avg":{
+            "D":142347,
+            "M":252357,
+            "F":277799,
+            "GK":115110
+        },
+        "salary_max_player":{
+            "D":"Pablo Mastroeni",
+            "F":"Cuauhtemoc Blanco",
+            "M":"David Beckham",
+            "GK":"Shaka Hislop"
+        }
+    },
+    "2012":{
+        "salary_max":{
+            "D":9200000.0,
+            "F":10600000.0,
+            "M":7124999.84,
+            "GK":525000.0
+        },
+        "salary_avg":{
+            "D":283855,
+            "M":328233,
+            "F":466765,
+            "GK":161748
+        },
+        "salary_max_player":{
+            "D":"Rafael Marquez",
+            "F":"Thierry Henry",
+            "M":"Tim Cahill",
+            "GK":"Donovan Ricketts"
+        }
+    },
+    "2013":{
+        "salary_max":{
+            "D":700000.0,
+            "F":9951570.5,
+            "M":7125000.0,
+            "GK":575000.0
+        },
+        "salary_avg":{
+            "D":227562,
+            "M":276109,
+            "F":520850,
+            "GK":180673
+        },
+        "salary_max_player":{
+            "D":"Jay DeMerit",
+            "F":"Clint Dempsey",
+            "M":"Tim Cahill",
+            "GK":"Donovan Ricketts"
+        }
+    },
+    "2017":{
+        "salary_max":{
+            "D":1594000.0,
+            "F":12715555.67,
+            "M":13827500.0,
+            "GK":4475000.0
+        },
+        "salary_avg":{
+            "D":344220,
+            "M":723153,
+            "F":942331,
+            "GK":305137
+        },
+        "salary_max_player":{
+            "D":"Jonathan Mensah",
+            "F":"Sebastian Giovinco",
+            "M":" Kaka",
+            "GK":"Tim Howard"
+        }
+    },
+    "2014":{
+        "salary_max":{
+            "D":2400000.0,
+            "F":12180000.0,
+            "M":13827500.0,
+            "GK":521833.33
+        },
+        "salary_avg":{
+            "D":273823,
+            "M":458302,
+            "F":661602,
+            "GK":190929
+        },
+        "salary_max_player":{
+            "D":"Liam Ridgewell",
+            "F":"Jermain Defoe",
+            "M":" Kaka",
+            "GK":"Troy Perkins"
+        }
+    },
+    "2015":{
+        "salary_max":{
+            "D":2650000.0,
+            "M":13827500.0,
+            "F":11220000.0,
+            "GK":765500.0
+        },
+        "salary_avg":{
+            "D":318207,
+            "F":763920,
+            "M":683843,
+            "GK":214540
+        },
+        "salary_max_player":{
+            "D":"Omar Gonzalez",
+            "M":" Kaka",
+            "F":"David Villa",
+            "GK":"Bill Hamid"
+        }
+    },
+    "2008":{
+        "salary_max":{
+            "D":800000.0,
+            "F":3093750.0,
+            "M":12000000.120000001,
+            "GK":426000.0
+        },
+        "salary_avg":{
+            "D":143880,
+            "M":296262,
+            "F":258135,
+            "GK":113626
+        },
+        "salary_max_player":{
+            "D":"Dulio Davino",
+            "F":"Juan Pablo Angel",
+            "M":"David Beckham",
+            "GK":"Joe Cannon"
+        }
+    },
+    "2010":{
+        "salary_max":{
+            "D":11088000.0,
+            "M":12000000.120000001,
+            "F":10600000.08,
+            "GK":600000.0
+        },
+        "salary_avg":{
+            "D":262773,
+            "F":439528,
+            "M":334272,
+            "GK":179966
+        },
+        "salary_max_player":{
+            "D":"Rafael Marquez",
+            "M":"David Beckham",
+            "F":"Thierry Henry",
+            "GK":"Kasey Keller"
+        }
+    }
+}
