@@ -10,6 +10,9 @@ def processSalary(fileName):
 
     # Save the year for dicts
     year = fileName[-8:-4]
+    salary_sum[year] = dict()
+    salary_avg[year] = dict()
+    counter[year] = dict()
 
     next(fil)
     for row in fil:
@@ -26,17 +29,17 @@ def processSalary(fileName):
             base_salary = float(row[4])
             g_compensation = float(row[5])
             pay = base_salary + g_compensation
-            if position in salary_sum:
-                salary_sum[position] += pay
-                counter[position] += 1
+            if position in salary_sum[year]:
+                salary_sum[year][position] += pay
+                counter[year][position] += 1
             else:
-                salary_sum[position] = pay
-                counter[position] = 1
+                salary_sum[year][position] = pay
+                counter[year][position] = 1
 
     print('In {}'.format(year))
-    for position in salary_sum:
-        salary_avg[position] = int(salary_sum[position] / counter[position])
-        print('{} makes {} a season'.format(position,salary_avg[position]))
+    for position in salary_sum[year]:
+        salary_avg[year][position] = int(salary_sum[year][position] / counter[year][position])
+        print('{} makes {} a season'.format(position,salary_avg[year][position]))
 
 
 salary_sum = dict()
