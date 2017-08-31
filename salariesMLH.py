@@ -1,10 +1,48 @@
-from openpyxl import load_workbook, Workbook
+import csv
+import re
+import os
 
 def processSalary(fileName):
 
-    # Load main sheet of file
-    wb = load_workbook(filename=fileName)
-    ws = wb.get_sheet_by_name(fileName)
+    # Load csv
+    fl = open(fileName, 'r')
+    fil = csv.reader(fl, delimiter=',')
 
-    size = ws.get_highest_row()
-    print size
+    # Save the year for dicts
+    year = fileName[-8:-4]
+
+    next(fil)
+    for row in fil:
+
+        # A player may be considered for more than one position
+        positions = re.split('-|/',row[3])
+        for position in positions:
+
+            # If empty cell, continue
+            if not row[4] or not row[5] or not position:
+                continue
+
+            # Salary from MLS to a player constitutes Salary + Guaranteed Compensation
+            base_salary = float(row[4])
+            g_compensation = float(row[5])
+            pay = base_salary + g_compensation
+            if position in salary_sum:
+                salary_sum[position] += pay
+                counter[position] += 1
+            else:
+                salary_sum[position] = pay
+                counter[position] = 1
+
+    print('In {}'.format(year))
+    for position in salary_sum:
+        salary_avg[position] = int(salary_sum[position] / counter[position])
+        print('{} makes {} a season'.format(position,salary_avg[position]))
+
+
+salary_sum = dict()
+salary_avg = dict()
+counter = dict()
+
+for fileName in os.listdir('./'):
+    if '.csv' in fileName:
+        processSalary(fileName)
