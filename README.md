@@ -1,6 +1,6 @@
 # MLS Player Salaries per Position per Year
 
-Different visualizations and stats about MLS players and their salaries from 2007 to 2017
+Different visualizations and stats about MLS players and their salaries from 2007 to 2017d
 
 ### Positions
 - GK : Goalkeeper
