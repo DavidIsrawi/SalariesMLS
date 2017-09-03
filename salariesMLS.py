@@ -41,21 +41,37 @@ def processSalary(fileName):
 
         if team not in stats['teams'][year]:
             stats['teams'][year][team] = dict()
+            stats['teams'][year][team]['salary_avg'] = dict()
+            stats['teams'][year][team]['budget'] = 0
+            stats['teams'][year][team]['salary_max_player'] = ''
+            stats['teams'][year][team]['salary_max'] = 0
 
         if team not in salary_sum[year]:
             salary_sum[year][team] = dict();
             counter[year][team] = dict()
 
+        if not row[4] or not row[5]:
+            continue
+
+        # Salary from MLS to a player constitutes Salary + Guaranteed Compensation
+        base_salary = float(row[4])
+        g_compensation = float(row[5])
+        pay = int(base_salary + g_compensation)
+
+        # Budget per team per year
+        stats['teams'][year][team]['budget'] += pay
+
+        # Salary max per team per year
+        if pay > stats['teams'][year][team]['salary_max']:
+            stats['teams'][year][team]['salary_max_player'] = player
+            stats['teams'][year][team]['salary_max'] = pay
+            stats['teams'][year][team]['salary_max_position'] = row[3]
+
         for position in positions:
 
             # If empty cell, continue
-            if not row[4] or not row[5] or not position:
+            if not position:
                 continue
-
-            # Salary from MLS to a player constitutes Salary + Guaranteed Compensation
-            base_salary = float(row[4])
-            g_compensation = float(row[5])
-            pay = int(base_salary + g_compensation)
 
             # If position not yet in year->team, add it
             if position in salary_sum[year][team]:
@@ -86,7 +102,7 @@ def processSalary(fileName):
 
     for team in salary_sum[year]:
         for position in salary_sum[year][team]:
-            stats['teams'][year][team][position] = int(salary_sum[year][team][position] / counter[year][team][position])
+            stats['teams'][year][team]['salary_avg'][position] = int(salary_sum[year][team][position] / counter[year][team][position])
 
             if position not in salary_sum_overall:
                 salary_sum_overall[position] = salary_sum[year][team][position]

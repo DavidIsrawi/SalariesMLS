@@ -9,9 +9,19 @@ Different visualizations and stats about MLS players and their salaries from 200
 - F : Forward
 
 ### Stats so far
+
+#### Overall
+- Average Salary
+- Max Salary (per position)
+- Max Salary Player (per position)
+
+#### Team
+- Player Budget
 - Average Salary
 - Max Salary
 - Max Salary Player
+- Max Salary Position
+<!-- Next step, add max salary and max salary player to teams. Should be hard -->
 
 Note: All stats are per position per year
 
